@@ -3,4 +3,24 @@
   <groupId>package</groupId>
   <artifactId>Maths_Operations</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.12</version>
+    <scope>test</scope>
+</dependency>  
+</dependencies>  
+<distributionManagement>
+  <repository>
+    <id>releases</id>
+    <name>releases</name>
+    <url>http://localhost:8081/repository/release/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <name>snapshots</name>
+    <url>http://localhost:8081/repository/snapshot/</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>
