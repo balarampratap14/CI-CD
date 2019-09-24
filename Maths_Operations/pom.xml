@@ -10,17 +10,26 @@
     <version>4.12</version>
     <scope>test</scope>
 </dependency>  
-</dependencies>  
+</dependencies>
+  
+  <repositories>
+    <repository>
+      <id>maven-public>
+        <url>http://localhost:8081/repository/maven-public/</url>
+        </repostiory>
+  </repositories>
+  
+  
 <distributionManagement>
   <repository>
     <id>releases</id>
     <name>releases</name>
-    <url>http://localhost:8081/repository/release/</url>
+    <url>http://localhost:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
     <id>snapshots</id>
     <name>snapshots</name>
-    <url>http://localhost:8081/repository/snapshot/</url>
+    <url>http://localhost:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
